@@ -63,7 +63,7 @@ Discuss your results here and answer additional questions from questions/tasks s
 
 ### The genes differentially expressed with age
 
-According to the results of `palmer2021ageing` study:
+According to the results of `palmer2021ageing` study all tissues and every tissue studied consistently overexpressed the following genes:
 
 <img
   src="/figs/Palmer_table_overexpressed.jpg"
@@ -71,6 +71,8 @@ According to the results of `palmer2021ageing` study:
   title="Overexpressed genes"
   style="display: inline-block; margin: 0 auto; max-width: 300px">
   
+And the picture of underexpressed genes is the following:
+
 <img
   src="/figs/Palmer_table_underexpressed.jpg"
   alt="Table of the top-5 genes most consistently underexpressed with age across datasets for all tissues and for each tissue studied. `palmer2021ageing`"
