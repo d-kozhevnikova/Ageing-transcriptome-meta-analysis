@@ -48,20 +48,17 @@ Next, the same analysis was conducted separately for each tissue.
 
 ### GO enrichment analysis
 
+Intersect the obtained list of differentially expressed genes across aging with GenAge database. Describe some of these genes.
+
 
 ## Discussion
 
-Discuss your results here and answer additional questions from questions/tasks section of **project proposal**. 
+### Reproduction of the results of the paper
 
-**!!!!!!!!!!!Our Project tasks/questions:**
-1) Reproduce the results of the paper. Try to use a maximum of python for conducting meta-analysis. PyMare package can help you.
-2) Describe some weak points of the paper (if any).
-3) Could you suggest improvements to the approach?
-4) Obtain a list of differentially expressed genes across aging. Intersect them with GenAge database. Describe some of these genes.
-5) Conduct enrichment analysis.
-6) Explain the ML approach used in the paper.
+5) Obtain a list of differentially expressed genes across aging. Intersect them with GenAge database. Describe some of these genes.
+6) Conduct enrichment analysis.
 
-### The genes differentially expressed with age
+### The list of differentially expressed genes across aging
 
 According to the results of `palmer2021ageing` study all tissues and every tissue studied consistently overexpressed the following genes:
 
@@ -78,16 +75,24 @@ And the picture of underexpressed genes is the following:
   alt="Table of the top-5 genes most consistently underexpressed with age across datasets for all tissues and for each tissue studied. `palmer2021ageing`"
   title="Underexpressed genes"
   style="display: inline-block; margin: 0 auto; max-width: 300px">
-
-
+  
 ### Machine learning approach used in the paper `palmer2021ageing`
+
 ML: list of GO terms that are enriched   build decision tree plot to understand wheather - enrichment term on each node of the tree (does the gene belong 
 des tree for each gene based on the functional categories - decides if the gene are dif expressed
 selected funct categories that predict best if the gene is diff expressed.
 
+### Weak points of the paper
+
+For the analysis of the significantly different expressions across the datasets, the authors used the binomial test. This approach is not the most reliable, as it does not reflect the effect size (?). In our analysis we applied meta-regression with the PyMare package. 
+
+### Suggestions for approach improvements
+
+...
 
 ## Credits
-This text prepared by [Daria Kozhevnikova](https://linktoyourprofile/scholar/or/linkedin.com) 
+
+This text prepared by Daria Kozhevnikova
 
 The Jupiter Notebook for the data analysis prepared by Andrey Stapran
 
