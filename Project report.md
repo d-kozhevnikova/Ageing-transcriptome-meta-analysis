@@ -36,9 +36,7 @@ $$Y_{ij} = \beta_{0j} + \beta_{1j}Age{i} + \epsilon_{ij}$$
 
 The slope of this regression identifies the coefficient of differencial expression. **F test** with 0.05 cutoff was then used to identify the significance of the coefficients. 
 
-To further identify the genes with significant changes in expression across the datasets **cumulative binomial test** was applied. 
-
-**meta-regression**???
+To identify genes differentially expressed in tissue across all datasets we applied **meta regression** with the corresponding function from the PyMare package. This function takes as input the estimated regression coefficients for individual datasets and the variance of these coefficients. It produces weighted assessments of gene expression effects, taking into account the level of uncertainty.
 
 ### Meta-analysis of the datasets
 
@@ -52,11 +50,6 @@ Intersect the obtained list of differentially expressed genes across aging with 
 
 
 ## Discussion
-
-### Reproduction of the results of the paper
-
-5) Obtain a list of differentially expressed genes across aging. Intersect them with GenAge database. Describe some of these genes.
-6) Conduct enrichment analysis.
 
 ### The list of differentially expressed genes across aging
 
@@ -76,6 +69,10 @@ And the picture of underexpressed genes is the following:
   title="Underexpressed genes"
   style="display: inline-block; margin: 0 auto; max-width: 300px">
   
+We obtained a list of differentially expressed genes across aging and intersected them with GenAge database. Describe some of these genes ... .
+
+We further conducted enrichment analysis ...
+
 ### Machine learning approach used in the paper `palmer2021ageing`
 
 ML: list of GO terms that are enriched   build decision tree plot to understand wheather - enrichment term on each node of the tree (does the gene belong 
