@@ -34,15 +34,15 @@ To estimate differencially expressed genes (DEGs) we conducted **linear regressi
 
 $$Y_{ij} = \beta_{0j} + \beta_{1j}Age{i} + \epsilon_{ij}$$
 
-The slope of this regression identifies the coefficient of differencial expression. **F test** with 0.05 cutoff was then used to identify the significance of the coefficients. 
-
-To identify genes differentially expressed in tissue across all datasets we applied **meta regression** with the corresponding function from the PyMare package. This function takes as input the estimated regression coefficients for individual datasets and the variance of these coefficients. It produces weighted assessments of gene expression effects, taking into account the level of uncertainty.
+The slope of this regression identifies the coefficient of differencial expression. **F test** with 0.05 cutoff was then used to identify the significance of the coefficients and the coefficients variances were calculated. 
 
 ### Meta-analysis of the datasets
 
-Firstly the global metaanalysis was conducted to identify DEGs across all tissues. For that the datasets with genes regression data were processed with the **PyMare** package.
+Firstly the global metaanalysis was conducted to identify DEGs across all tissues. 
 
-Next, the same analysis was conducted separately for each tissue. 
+Next, the same analysis was conducted separately for each tissue. ???
+
+To identify genes differentially expressed in tissue across all datasets we applied **meta regression** with the corresponding function from the **PyMare** package. This function takes as input the estimated regression coefficients for individual datasets and the variance of these coefficients. It produces weighted assessments of gene expression effects, taking into account the level of uncertainty. In our meta regression function, we passed the coefficient values, variances of coefficients, and tissue parameters and obtained..... ???
 
 ### GO enrichment analysis
 
@@ -81,7 +81,7 @@ selected funct categories that predict best if the gene is diff expressed.
 
 ### Weak points of the paper
 
-For the analysis of the significantly different expressions across the datasets, the authors used the binomial test. This approach is not the most reliable, as it does not reflect the effect size (?). In our analysis we applied meta-regression with the PyMare package. 
+For the analysis of the significantly different expressions across the datasets, the authors used the binomial test. This approach is not the most reliable, as it does not reflect the effect size (?). We applied meta-regression using the PyMare package for a higher specificity analysis.
 
 ### Suggestions for approach improvements
 
