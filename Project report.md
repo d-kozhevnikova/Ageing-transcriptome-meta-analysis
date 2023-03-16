@@ -13,21 +13,27 @@ In this project, we reproduce the results of a meta-analysis of gene expression 
 
 ## Results
 
-#### Preprocessing of the gene expression data
+### Preprocessing of the gene expression data
 
 From the data avaliable on the [github repository](https://github.com/maglab/AgeingSignatures2020_supplementary) we selected 20 mice microarray datasets originated from brain, heart and muscle. Each dataset contains expression levels of around 20000 genes from several samples.
 
-To estimate differencially expressed genes (DEGs) we conducted linear regression analysis for all the datasets. The regression equation:
+#### Quality control
+
+To explore a similarity of the samples we applied the Principal Component Analysis (PCA) method of data clustering. 
+
+#### Statistical testing
+
+To estimate differencially expressed genes (DEGs) we conducted **linear regression** analysis for all the datasets. The regression equation:
 
 $$Y_{ij} = \beta_{0j} + \beta_{1j}Age{i} + \epsilon_{ij}$$
 
-The slope of this regression identifies the coefficient of differencial expression. F test with 0.05 cutoff was then used to identify the significance of the coefficients. 
+The slope of this regression identifies the coefficient of differencial expression. **F test** with 0.05 cutoff was then used to identify the significance of the coefficients. 
 
-To further identify the genes with significant changes in expression across the datasets cumulative binomial test was applied. 
+To further identify the genes with significant changes in expression across the datasets **cumulative binomial test** was applied. 
 
-meta-regression???
+**meta-regression**???
 
-#### Meta-analysis of the datasets
+### Meta-analysis of the datasets
 
 Firstly the global metaanalysis was conducted to identify DEGs across all tissues. For that the datasets with genes regression data were processed with the **PyMare** package.
 
@@ -41,7 +47,7 @@ Put figures in your report. If some of the pictures were produced with python co
 Hallmarks taxonomy.
 ```
 
-#### GO enrichment analysis
+### GO enrichment analysis
 
 
 ## Discussion
@@ -56,9 +62,9 @@ Discuss your results here and answer additional questions from questions/tasks s
 5) Conduct enrichment analysis.
 6) Explain the ML approach used in the paper.
 
-#### The genes differentially expressed with age
+### The genes differentially expressed with age
 
-#### Machine learning approach used in the paper `palmer2021ageing`
+### Machine learning approach used in the paper `palmer2021ageing`
 ML: list of GO terms that are enriched   build decision tree plot to understand wheather - enrichment term on each node of the tree (does the gene belong 
 des tree for each gene based on the functional categories - decides if the gene are dif expressed
 selected funct categories that predict best if the gene is diff expressed.
