@@ -6,6 +6,13 @@ style blocks from [jupyter_book](https://jupyterbook.org/en/stable/intro.html) A
 
 Use the following directive to refer to a particular picture in the text {numref}`hallmarks_taxonomy`
 
+directive to put a figure inside the text:
+
+```{figure} figs/hallmarks_taxonomy.png
+:name: hallmarks_taxonomy
+Hallmarks taxonomy.
+```
+
 
 ## Introduction
 
@@ -39,14 +46,6 @@ Firstly the global metaanalysis was conducted to identify DEGs across all tissue
 
 Next, the same analysis was conducted separately for each tissue. 
 
-
-Put figures in your report. If some of the pictures were produced with python code, save them in a separate folder within the folder of your project. Use the following directive to put a figure inside the text:
-
-```{figure} figs/hallmarks_taxonomy.png
-:name: hallmarks_taxonomy
-Hallmarks taxonomy.
-```
-
 ### GO enrichment analysis
 
 
@@ -63,6 +62,15 @@ Discuss your results here and answer additional questions from questions/tasks s
 6) Explain the ML approach used in the paper.
 
 ### The genes differentially expressed with age
+
+According to the results of `palmer2021ageing` study:
+
+<img
+  src="/figs/Palmer_table_overexpressed.jpg"
+  alt="Table of the top-5 genes most consistently overexpressed with age across datasets for all tissues and for each tissue studied. `palmer2021ageing`"
+  title="Overexpressed genes"
+  style="display: inline-block; margin: 0 auto; max-width: 300px">
+
 
 ### Machine learning approach used in the paper `palmer2021ageing`
 ML: list of GO terms that are enriched   build decision tree plot to understand wheather - enrichment term on each node of the tree (does the gene belong 
