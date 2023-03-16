@@ -70,6 +70,12 @@ According to the results of `palmer2021ageing` study:
   alt="Table of the top-5 genes most consistently overexpressed with age across datasets for all tissues and for each tissue studied. `palmer2021ageing`"
   title="Overexpressed genes"
   style="display: inline-block; margin: 0 auto; max-width: 300px">
+  
+<img
+  src="/figs/Palmer_table_underexpressed.jpg"
+  alt="Table of the top-5 genes most consistently underexpressed with age across datasets for all tissues and for each tissue studied. `palmer2021ageing`"
+  title="Underexpressed genes"
+  style="display: inline-block; margin: 0 auto; max-width: 300px">
 
 
 ### Machine learning approach used in the paper `palmer2021ageing`
