@@ -4,15 +4,6 @@ All code for tasks described in this report is avaliable in the [Jupiter Noteboo
 
 style blocks from [jupyter_book](https://jupyterbook.org/en/stable/intro.html) API for making the report more beautiful.
 
-Use the following directive to refer to a particular picture in the text {numref}`hallmarks_taxonomy`
-
-directive to put a figure inside the text:
-
-```{figure} figs/hallmarks_taxonomy.png
-:name: hallmarks_taxonomy
-Hallmarks taxonomy.
-```
-
 
 ## Introduction
 
