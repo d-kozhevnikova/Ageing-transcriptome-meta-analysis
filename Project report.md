@@ -13,11 +13,11 @@ In this project, we reproduce the results of a meta-analysis of gene expression 
 
 ### Preprocessing of the gene expression data
 
-From the data avaliable on the [github repository](https://github.com/maglab/AgeingSignatures2020_supplementary) we selected 20 mice microarray datasets originated from brain, heart and muscle. Each dataset contains expression levels of around 20000 genes from several samples.
+From the data avaliable on the [github repository](https://github.com/maglab/AgeingSignatures2020_supplementary) we selected 20 mice microarray datasets originated from brain, heart and muscle. (12 (14) samples from brain, 5 from heart and 8 (12) from muscle) Each dataset contains expression levels of around 20000 genes from several samples.
 
 #### Quality control
 
-To explore a similarity of the samples we applied the Principal Component Analysis (PCA) method of data clustering. 
+To explore a similarity of the samples we applied the Principal Component Analysis (PCA) method of data clustering. The samples belonging to different ages are intermingled, so we need not remove them
 
 #### Statistical testing
 
@@ -28,6 +28,8 @@ $$Y_{ij} = \beta_{0j} + \beta_{1j}Age{i} + \epsilon_{ij}$$
 The slope of this regression identifies the coefficient of differencial expression. **F test** with 0.05 cutoff was then used to identify the significance of the coefficients and the coefficients variances were calculated. 
 
 ### Meta-analysis of the datasets
+
+subsetting_stats_genes - takes in the results of dataset builder and retorns tables with all significantl expressed genes
 
 Firstly the global metaanalysis was conducted to identify DEGs across all tissues. 
 
