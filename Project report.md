@@ -18,6 +18,20 @@ The outline of the original study is the following:
 9. Build Random Forest ML models to identify the most important GO terms
 10. Run tissue specificity analysis (calculating the tau index)
 
+### Machine learning approach used in the paper `palmer2021ageing`
+
+ML: list of GO terms that are enriched   build decision tree plot to understand wheather - enrichment term on each node of the tree (does the gene belong 
+des tree for each gene based on the functional categories - decides if the gene are dif expressed
+selected funct categories that predict best if the gene is diff expressed.
+
+### Weak points of the paper
+
+For the analysis of the significantly different expressions across the datasets, the authors used the binomial test. In cases where the dataset number is small, such meta-regression tests are not statistically significant because they don't reflect the effect size. Additionally, two different data types are explored, RNA-seq and microarray DNA, which require correction for the type of the data when they are combined. 
+
+### Suggestions for approach improvements
+
+Another approach for meta-regression can be used, in our project we applied meta-regression using the PyMare package for a higher specificity analysis.
+
 ## Results
 
 ### Preprocessing of the gene expression data
@@ -124,21 +138,8 @@ And the picture of underexpressed genes is the following:
   
 We obtained a list of differentially expressed genes across aging and intersected them with GenAge database. Describe some of these genes ... .
 
-We further conducted enrichment analysis ...
+We further conducted enrichment analyses for genes differentially expressed in each tissue and for all three tissues together. According to its findings, immune system activation genes were overexpressed in the brain. Differentiation-related genes were overexpressed in muscles, resulting in a decrease in regeneration activity and muscle deterioration. An increase in GABA signaling and ion transport was observed in the heart. All tissues collectively exhibit an increase in the activity of immune and proteilitic genes, while metabolic genes decrease. The described results are in line with the conclusions made in the paper `palmer2021ageing`. 
 
-### Machine learning approach used in the paper `palmer2021ageing`
-
-ML: list of GO terms that are enriched   build decision tree plot to understand wheather - enrichment term on each node of the tree (does the gene belong 
-des tree for each gene based on the functional categories - decides if the gene are dif expressed
-selected funct categories that predict best if the gene is diff expressed.
-
-### Weak points of the paper
-
-For the analysis of the significantly different expressions across the datasets, the authors used the binomial test. This approach is not the most reliable, as it does not reflect the effect size (?). We applied meta-regression using the PyMare package for a higher specificity analysis.
-
-### Suggestions for approach improvements
-
-...
 
 ## Credits
 
