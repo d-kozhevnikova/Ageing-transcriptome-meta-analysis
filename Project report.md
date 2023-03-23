@@ -48,8 +48,59 @@ To identify genes differentially expressed in tissue across all datasets we appl
 
 ### GO enrichment analysis
 
-Intersect the obtained list of differentially expressed genes across aging with GenAge database. Describe some of these genes.
+Gene Onthology enrichment analysis was done to identify functional categories for the obtained DEGs. In the genes overexpressed with age across multiple datasets in the brain, the enrichment terms are the following:
 
+<img
+  src="/figs/Enrich_terms_over_brain.png"
+  alt="Enrichment terms in the brain overexpressed genes"
+  title="Enrichment terms in the brain overexpressed genes"
+  style="display: inline-block; margin: 0 auto; max-width: 300px">
+  
+In the muscle overexpressed genes with age, the picture is the following:
+
+<img
+  src="/figs/Enrich_terms_over_muscle.png"
+  alt="Enrichment terms in the muscle overexpressed genes"
+  title="Enrichment terms in the muscle overexpressed genes"
+  style="display: inline-block; margin: 0 auto; max-width: 300px">
+  
+For heart overexpressed genes:
+
+<img
+  src="/figs/Enrich_terms_over_heart.png"
+  alt="Enrichment terms in the heart overexpressed genes"
+  title="Enrichment terms in the heart overexpressed genes"
+  style="display: inline-block; margin: 0 auto; max-width: 300px">
+  
+For heart underexpressed:
+
+<img
+  src="/figs/Enrich_terms_under_heart.png"
+  alt="Enrichment terms in the heart underexpressed genes"
+  title="Enrichment terms in the heart underexpressed genes"
+  style="display: inline-block; margin: 0 auto; max-width: 300px">
+  
+Enriched terms in the genes differentially overexpressed with age across multiple datasets in all three tissues are:
+
+<img
+  src="/figs/Enrich_terms_over_allthetissues.jpg"
+  alt="Enrichment terms overexpressed genes in all tissues "
+  title="Enrichment terms overexpressed genes in all tissues"
+  style="display: inline-block; margin: 0 auto; max-width: 300px">
+  
+While for underexpressed:
+
+<img
+  src="/figs/Enrich_terms_under_allthetissues.jpg"
+  alt="Enrichment terms underexpressed genes in all tissues "
+  title="Enrichment terms underexpressed genes in all tissues"
+  style="display: inline-block; margin: 0 auto; max-width: 300px">
+  
+  
+
+### Search in GenAge database
+
+Intersection of the obtained list of differentially expressed genes across aging with GenAge database. 
 
 ## Discussion
 
