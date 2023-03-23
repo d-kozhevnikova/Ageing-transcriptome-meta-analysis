@@ -51,7 +51,7 @@ To identify genes differentially expressed in tissue across all datasets we appl
 Gene Onthology enrichment analysis was done to identify functional categories for the obtained DEGs. In the genes overexpressed with age across multiple datasets in the brain, the enrichment terms are the following:
 
 <img
-  src="/figs/Enrich_terms_over_brain.png"
+  src="/figs/Enrich_terms_over_brain.jpg"
   alt="Enrichment terms in the brain overexpressed genes"
   title="Enrichment terms in the brain overexpressed genes"
   style="display: inline-block; margin: 0 auto; max-width: 300px">
@@ -59,7 +59,7 @@ Gene Onthology enrichment analysis was done to identify functional categories fo
 In the muscle overexpressed genes with age, the picture is the following:
 
 <img
-  src="/figs/Enrich_terms_over_muscle.png"
+  src="/figs/Enrich_terms_over_muscle.jpg"
   alt="Enrichment terms in the muscle overexpressed genes"
   title="Enrichment terms in the muscle overexpressed genes"
   style="display: inline-block; margin: 0 auto; max-width: 300px">
@@ -67,7 +67,7 @@ In the muscle overexpressed genes with age, the picture is the following:
 For heart overexpressed genes:
 
 <img
-  src="/figs/Enrich_terms_over_heart.png"
+  src="/figs/Enrich_terms_over_heart.jpg"
   alt="Enrichment terms in the heart overexpressed genes"
   title="Enrichment terms in the heart overexpressed genes"
   style="display: inline-block; margin: 0 auto; max-width: 300px">
@@ -75,7 +75,7 @@ For heart overexpressed genes:
 For heart underexpressed:
 
 <img
-  src="/figs/Enrich_terms_under_heart.png"
+  src="/figs/Enrich_terms_under_heart.jpg"
   alt="Enrichment terms in the heart underexpressed genes"
   title="Enrichment terms in the heart underexpressed genes"
   style="display: inline-block; margin: 0 auto; max-width: 300px">
