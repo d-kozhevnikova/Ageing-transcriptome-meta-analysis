@@ -9,6 +9,18 @@ style blocks from [jupyter_book](https://jupyterbook.org/en/stable/intro.html) A
 
 In this project, we reproduce the results of a meta-analysis of gene expression in mice reported by Palmer, Daniel et al. in 2021  [palmer2021ageing](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7906136/#SD2). In this study transcriptome signatures of ageing in brain, heart and muscle were derived from 127 public microarray and RNA-Seq datasets from mice, rats, and humans. Gene expression patterns revealed overexpression of immune and stress response genes with age, as well as underexpression of metabolic and developmental genes. It was indicated that gene ageing signatures are associated with key genes in protein interaction networks. Previously in thr paper [de2009meta](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2732303/) several common signatures of aging were highlighted including overexpression of inflammation, immune response and lysosomes related genes, underexpression of collagen, energy metabolism and MT genes, as well as alterations in expression of apoptosis genes. The reasoning that genes that display differential expression with age are mainly common for different tissues was confirmed.  
 
+The outline of the original study is the following: 
+1. Linear regression was performed for each gene inside each dataset
+2. Genes statistically significantly associated with age were selected
+3. Meta regression was performed with Binomial test
+4. FDR correction by permutation, the genes by critical P value sorted
+5. Identified differentially expressed genes in each set of datasets
+6. Identified differentially expressed genes in all datasets combines
+7. Enrichment analysis with David and topGO R tool
+8. dN/dS analysis
+9. Build Random Forest ML models to identify the most important GO terms
+10. Run tissue specificity analysis (calculating the tau index)
+
 ## Results
 
 ### Preprocessing of the gene expression data
