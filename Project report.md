@@ -10,7 +10,7 @@ The outline of the original study is the following:
 1. Linear regression was performed for each gene inside each dataset. The slope of the regression corresponds to the level of change in gene expression.
 2. Genes statistically significantly associated with age were selected.
 3. Meta regression was performed with Binomial test.
-4. FDR correction by permutation, the genes by critical P value sorted.
+4. False discovery rate correction by permutation, the genes by critical P value sorted.
 5. Differentially expressed genes (DEGs) were identified in each set of datasets.
 6. DEGs were identified in all datasets combined.
 7. Enrichment analysis with David and topGO R tool was performed.
@@ -20,9 +20,7 @@ The outline of the original study is the following:
 
 ### Machine learning approach used in the paper `palmer2021ageing`
 
-ML: list of GO terms that are enriched   build decision tree plot to understand wheather - enrichment term on each node of the tree (does the gene belong 
-des tree for each gene based on the functional categories - decides if the gene are dif expressed
-selected funct categories that predict best if the gene is diff expressed.
+...
 
 ### Weak points of the paper
 
@@ -40,7 +38,7 @@ From the data avaliable on the [github repository](https://github.com/maglab/Age
 
 #### Quality control
 
-To explore a similarity of the samples we applied the Principal Component Analysis (PCA) method of data clustering. The samples belonging to different ages are intermingled, so we need not remove them
+To explore a similarity of the samples we applied the Principal Component Analysis (PCA) method of data clustering. The samples belonging to different ages showed to be intermingled in the samples, so no samples were removed. 
 
 #### Statistical testing
 
@@ -50,7 +48,11 @@ $$Y_{ij} = \beta_{0j} + \beta_{1j}Age{i} + \epsilon_{ij}$$
 
 The slope of this regression identifies the coefficient of differencial expression. **F test** with 0.05 cutoff was then used to identify the significance of the coefficients and the coefficients variances were calculated. 
 
+...???
+
 ### Meta-analysis of the datasets
+
+...???
 
 subsetting_stats_genes - takes in the results of dataset builder and retorns tables with all significantl expressed genes
 
@@ -62,7 +64,7 @@ To identify genes differentially expressed in tissue across all datasets we appl
 
 ### GO enrichment analysis
 
-Gene Onthology enrichment analysis was done to identify functional categories for the obtained DEGs. In the genes overexpressed with age across multiple datasets in the brain, the enrichment terms are the following:
+Gene Onthology enrichment analysis was done with **gseapy** python package to identify functional categories for the obtained DEGs. In the genes overexpressed with age across multiple datasets in the brain, the enrichment terms are the following:
 
 <img
   src="/figs/Enrich_terms_over_brain.jpg"
@@ -116,6 +118,8 @@ While for underexpressed:
 
 Intersection of the obtained list of differentially expressed genes across aging with GenAge database. 
 
+...
+
 ## Discussion
 
 ### The list of differentially expressed genes across aging
@@ -136,16 +140,20 @@ And the picture of underexpressed genes is the following:
   title="Underexpressed genes"
   style="display: inline-block; margin: 0 auto; max-width: 300px">
   
-We obtained a list of differentially expressed genes across aging and intersected them with GenAge database. Describe some of these genes ... .
+We obtained a list of differentially expressed genes across aging and intersected them with GenAge database. Describtion of some of these genes ... .
+
+...
 
 We further conducted enrichment analyses for genes differentially expressed in each tissue and for all three tissues together. According to its findings, immune system activation genes were overexpressed in the brain. Differentiation-related genes were overexpressed in muscles, resulting in a decrease in regeneration activity and muscle deterioration. An increase in GABA signaling and ion transport was observed in the heart. All tissues collectively exhibit an increase in the activity of immune and proteilitic genes, while metabolic genes decrease. The described results are in line with the conclusions made in the paper `palmer2021ageing`. 
 
 
 ## Credits
 
-This text prepared by Daria Kozhevnikova
+GO enrichment analysis and this repository prepared by Daria Kozhevnikova
 
-The Jupiter Notebook for the data analysis prepared by Andrey Stapran
+The Jupiter Notebook for the data meta-analysis prepared by Andrey Stapran
+
+The search in GenAge and description of found matches prepared by ShahZeb Khan
 
 ## References
 
