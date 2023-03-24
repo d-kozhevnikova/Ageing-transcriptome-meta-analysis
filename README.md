@@ -17,6 +17,7 @@ This project tries to reproduce the results of the original paper by Palmer D. e
 <li><b>brain</b> - folder with results of meta-regression analysis for brain</li>
 <li><b>muscle</b> - folder with results of meta-regression analysis for muscle</li>
 </ul>
+<li><i>AgeingTranscriptionMetaRegression.ipynb</i> - commented jupyter notebook with the code used for the analysis in the current project</li>
 <li><i>Presentation.pdf</i> - slides with the results of our project</li>
 <li><a href="https://github.com/d-kozhevnikova/Ageing-transcriptome-meta-analysis/blob/main/Project%20report.md"><i>Project report.md</i></a> - <b>main part with the description of experimental procedure and results obtained in this project</b></li>
 <li><i>References.bib</i> - file with references</li>
