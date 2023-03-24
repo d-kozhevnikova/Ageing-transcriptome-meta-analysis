@@ -116,10 +116,63 @@ While for underexpressed:
 
 ### Search in GenAge database
 
-Intersection of the obtained list of differentially expressed genes across aging with GenAge database. 
+## Gene expression comparison in Brain, Heart and Muscle
 
-...
+### Upregulated and Downregulated genes common between Brain, Heart and Muscle:
+We carried out intersection analysis of Upregulated and Downregulated genes that are common between all three tissues. Five genes (**ACER2, RHPN2, CD2AP, RRAGC, SKAP2**) were overexpressed whereas four genes (**CRB3, HOXD12, UBN1, SLC6A3**) were underexpressed in Brain, Heart and Muscle.
 
+### Upregulated genes: 
+Description of common upregulated genes in Brain, Heart and Muscle tissues
+  **1. ACER2**: may lead to changes in the metabolism of ceramide and other lipid molecules
+  
+  **2. RHPN2**: may affect cell adhesion, migration, and signaling, which could impact various physiological and pathological processes
+  
+  **3. CD2AP**: may disrupt the structure and function of the glomerular filtration barrier in the kidney, leading to proteinuria, inflammation, and progressive kidney damage.
+  
+  **4. RRAGC**: may affect the activity of the mTORC1 signaling pathway, which plays a key role in regulating cell growth, autophagy, and metabolism
+  
+  **5. SKAP2**: Differential expression of SKAP2 may influence T-cell activation and migration, which are essential for immune surveillance and defense against infections and cancer
+
+### Downregulated genes:
+Description of common upregulated genes in Brain, Heart and Muscle tissues
+  
+  **1. CRB3**: encodes a protein that is important for maintaining the structure and function of epithelial cells
+  
+  **2. HOXD12**: member of the homeobox gene family that is involved in regulating embryonic development and differentiation
+  
+  **3. UBN1**: involved in chromatin remodeling, which is important for regulating gene expression. 
+  
+  **4. SLC6A3**: encodes a dopamine transporter protein that is involved in the regulation of dopamine signaling in the brain
+
+## GenAge intersection analysis
+
+From GenAge repository we downloaded about mouse genes and removed duplicates. The set of genes were intersected with Upregulated and Downregulated genes ideitnfied in our study. 
+
+### Upregulated genes intersection with GenAge:
+In the upregulated set of genes seven genes were reported in GenAge. 
+
+  **1. EFEMP1**: encodes a protein that is involved in cell adhesion and signaling
+  
+  **2. TRP53BP1**: This gene is involved in the DNA damage response and plays a role in maintaining genomic stability
+  
+  **3. PAWR**: involved in the regulation of apoptosis (programmed cell death) and has been implicated in various physiological and pathological processes, including cancer and neurodegeneration 
+  
+  **4. CDKN1A**: This gene encodes a protein called p21, which is a key regulator of cell cycle progression and DNA damage response 
+  
+  **5. GRN**: encodes a protein called progranulin, which is involved in various physiological processes, including inflammation, wound healing, and neuronal development 
+  
+  **6. GPX4**: encodes an enzyme called glutathione peroxidase 4, which plays a critical role in protecting cells from oxidative stress 
+  
+  **7. HNRNPD**: This gene encodes a protein called heterogeneous nuclear ribonucleoprotein D, which is involved in RNA processing and gene expression regulation
+
+### Downregulated genes intersectio with GenAge:
+Incase of downregulated genes only three genes were reported in GenAge database.
+
+  **1. POU1F1 (Pit-1)**: a transcription factor that plays a critical role in the development and function of the pituitary gland
+
+  **2. FOXM1**: a transcription factor that regulates the expression of genes involved in cell cycle progression, DNA replication, and repair
+
+  **3. NUDT1 (nucleoside diphosphate-linked moiety X motif 1)**: an enzyme involved in nucleotide metabolism and DNA damage response
 ## Discussion
 
 ### The list of differentially expressed genes across aging
