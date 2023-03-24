@@ -202,7 +202,9 @@ We further conducted enrichment analyses for genes differentially expressed in e
 
 ## Credits
 
-GO enrichment analysis and this repository prepared by Daria Kozhevnikova
+THis repository was created by Andrey Stapran (MSc 2nd yeara LS), Shahzeb Khan (MSc 2nd year LS) and Daria Kozhevnikova (MSc 1st year LS) as part of a final project for **Computational Biology of Aging** course taught by **Ekaterina Khrameeva** at Skolkovo Institute of Science and Technology, Moscow
+
+GO enrichment analysis and this repository prepared by 
 
 The Jupiter Notebook for the data meta-analysis prepared by Andrey Stapran
 
