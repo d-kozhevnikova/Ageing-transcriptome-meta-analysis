@@ -82,7 +82,7 @@ Gene Onthology enrichment analysis was done with **gseapy** python package to id
 In the muscle overexpressed genes with age, the picture is the following:
 
 <img
-  src="/figs/Enrich_terms_over_muscle.jpg"
+  src="https://github.com/d-kozhevnikova/Ageing-transcriptome-meta-analysis/blob/main/figs/Enrich_terms_over_muscle.jpg"
   alt="Enrichment terms in the muscle overexpressed genes"
   title="Enrichment terms in the muscle overexpressed genes"
   style="display: inline-block; margin: 0 auto; max-width: 300px">
@@ -90,7 +90,7 @@ In the muscle overexpressed genes with age, the picture is the following:
 For heart overexpressed genes:
 
 <img
-  src="/figs/Enrich_terms_over_heart.jpg"
+  src="https://github.com/d-kozhevnikova/Ageing-transcriptome-meta-analysis/blob/main/figs/Enrich_terms_over_heart.jpg"
   alt="Enrichment terms in the heart overexpressed genes"
   title="Enrichment terms in the heart overexpressed genes"
   style="display: inline-block; margin: 0 auto; max-width: 300px">
@@ -98,7 +98,7 @@ For heart overexpressed genes:
 For heart underexpressed:
 
 <img
-  src="/figs/Enrich_terms_under_heart.jpg"
+  src="https://github.com/d-kozhevnikova/Ageing-transcriptome-meta-analysis/blob/main/figs/Enrich_terms_under_heart.jpg"
   alt="Enrichment terms in the heart underexpressed genes"
   title="Enrichment terms in the heart underexpressed genes"
   style="display: inline-block; margin: 0 auto; max-width: 300px">
@@ -106,7 +106,7 @@ For heart underexpressed:
 Enriched terms in the genes differentially overexpressed with age across multiple datasets in all three tissues are:
 
 <img
-  src="/figs/Enrich_terms_over_allthetissues.jpg"
+  src="https://github.com/d-kozhevnikova/Ageing-transcriptome-meta-analysis/blob/main/figs/Enrich_terms_over_allthetissues.jpg"
   alt="Enrichment terms overexpressed genes in all tissues "
   title="Enrichment terms overexpressed genes in all tissues"
   style="display: inline-block; margin: 0 auto; max-width: 300px">
@@ -114,7 +114,7 @@ Enriched terms in the genes differentially overexpressed with age across multipl
 While for underexpressed:
 
 <img
-  src="/figs/Enrich_terms_under_allthetissues.jpg"
+  src="https://github.com/d-kozhevnikova/Ageing-transcriptome-meta-analysis/blob/main/figs/Enrich_terms_under_allthetissues.jpg"
   alt="Enrichment terms underexpressed genes in all tissues "
   title="Enrichment terms underexpressed genes in all tissues"
   style="display: inline-block; margin: 0 auto; max-width: 300px">
@@ -141,7 +141,7 @@ Description of common upregulated genes in Brain, Heart and Muscle tissues
   **5. SKAP2**: Differential expression of SKAP2 may influence T-cell activation and migration, which are essential for immune surveillance and defense against infections and cancer
 
 <img
-  src="/figs/uregulated genes intersection.png"
+  src="https://github.com/d-kozhevnikova/Ageing-transcriptome-meta-analysis/blob/main/figs/uregulated genes intersection.png"
   alt="Upregulated genes intersection in all tissues "
   title="Upregulated genes intersection genes in all tissues"
   style="display: inline-block; margin: 0 auto; max-width: 300px">
@@ -159,14 +159,14 @@ Description of common upregulated genes in Brain, Heart and Muscle tissues
   **4. SLC6A3**: encodes a dopamine transporter protein that is involved in the regulation of dopamine signaling in the brain
 
 <img
-  src="/figs/downregulated gebes ibtersection.png"
+  src="https://github.com/d-kozhevnikova/Ageing-transcriptome-meta-analysis/blob/main/figs/downregulated gebes ibtersection.png"
   alt="Downregulated genes intersection in all tissues "
   title="Downregulated genes intersection genes in all tissues"
   style="display: inline-block; margin: 0 auto; max-width: 300px">
 
 ## GenAge intersection analysis
 
-From GenAge repository we downloaded about mouse genes and removed duplicates. The set of genes were intersected with Upregulated and Downregulated genes ideitnfied in our study. 
+From GenAge database we have downloaded the genes associated with age. The set of genes were intersected with Upregulated and Downregulated genes (from the anlaysis of three tissues all together) identified in our study. 
 
 ### Upregulated genes intersection with GenAge:
 In the upregulated set of genes seven genes were reported in GenAge. 
@@ -186,7 +186,7 @@ In the upregulated set of genes seven genes were reported in GenAge.
   **7. HNRNPD**: This gene encodes a protein called heterogeneous nuclear ribonucleoprotein D, which is involved in RNA processing and gene expression regulation
 
 <img
-  src="/figs/Genage iontersection with upregulated genes.png"
+  src="https://github.com/d-kozhevnikova/Ageing-transcriptome-meta-analysis/blob/main/figs/Genage iontersection with upregulated genes.png"
   alt="Genage iontersection with upregulated genes in all tissues "
   title="Genage iontersection with upregulated genes in all tissues"
   style="display: inline-block; margin: 0 auto; max-width: 300px">
@@ -201,7 +201,7 @@ Incase of downregulated genes only three genes were reported in GenAge database.
   **3. NUDT1 (nucleoside diphosphate-linked moiety X motif 1)**: an enzyme involved in nucleotide metabolism and DNA damage response
 
 <img
-  src="/figs/Genage intersection with downregulated genes.png"
+  src="https://github.com/d-kozhevnikova/Ageing-transcriptome-meta-analysis/blob/main/figs/Genage intersection with downregulated genes.png"
   alt="Genage intersection with downregulated genes in all tissues "
   title="Genage iontersection with downregulated genes in all tissues"
   style="display: inline-block; margin: 0 auto; max-width: 300px">
@@ -213,7 +213,7 @@ Incase of downregulated genes only three genes were reported in GenAge database.
 According to the results of `palmer2021ageing` study all tissues and every tissue studied consistently overexpressed the following genes:
 
 <img
-  src="/figs/Palmer_table_overexpressed.jpg"
+  src="https://github.com/d-kozhevnikova/Ageing-transcriptome-meta-analysis/blob/main/figs/Palmer_table_overexpressed.jpg"
   alt="Table of the top-5 genes most consistently overexpressed with age across datasets for all tissues and for each tissue studied. `palmer2021ageing`"
   title="Overexpressed genes"
   style="display: inline-block; margin: 0 auto; max-width: 300px">
@@ -221,7 +221,7 @@ According to the results of `palmer2021ageing` study all tissues and every tissu
 And the picture of underexpressed genes is the following:
 
 <img
-  src="/figs/Palmer_table_underexpressed.jpg"
+  src="https://github.com/d-kozhevnikova/Ageing-transcriptome-meta-analysis/blob/main/figs/Palmer_table_underexpressed.jpg"
   alt="Table of the top-5 genes most consistently underexpressed with age across datasets for all tissues and for each tissue studied. `palmer2021ageing`"
   title="Underexpressed genes"
   style="display: inline-block; margin: 0 auto; max-width: 300px">
