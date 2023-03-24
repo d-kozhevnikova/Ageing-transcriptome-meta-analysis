@@ -70,13 +70,11 @@ Where Y is the expression of of gene <i>j</i> in sample <i>i</i>, <i>β<sub>0j</
 ### Meta-analysis of the datasets
 To identify genes differentially expressed in tissue across all datasets we applied **meta-regression** function from the **PyMare** package. This function takes as input the estimated regression coefficients for individual datasets and the variances for these coefficients as well as dataset sizes. It produces weighted estimates for gene expression change direction with age(called **total effect**), taking into account the level of uncertainty, and number of datasets analyzed.<br>
 We conducted such analysis for each of the tissues as well as for all three tissues together. In the latter case we also passed the tissue parameters as extra cofounder parameter.
-
 ### GO enrichment analysis
-
 Gene Onthology enrichment analysis was done with **gseapy** python package to identify functional categories for the obtained DEGs. In the genes overexpressed with age across multiple datasets in the brain, the enrichment terms are the following:
 
 <img
-  src="/figs/Enrich_terms_over_brain.jpg"
+  src="https://github.com/d-kozhevnikova/Ageing-transcriptome-meta-analysis/blob/main/figs/Enrich_terms_over_brain.jpg"
   alt="Enrichment terms in the brain overexpressed genes"
   title="Enrichment terms in the brain overexpressed genes"
   style="display: inline-block; margin: 0 auto; max-width: 300px">
