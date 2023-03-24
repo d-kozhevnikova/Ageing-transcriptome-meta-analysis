@@ -64,7 +64,7 @@ To estimate differencially expressed genes (DEGs) we conducted **linear regressi
 
 $$Y_{ij} = \beta_{0j} + \beta_{1j}Age{i} + \epsilon_{ij}$$
 
-Where Y is the expression of of gene <i>j</i> in sample <i>i</i>, $$\beta_{0j}$$ is the intercept for gene <i>j</i>, $$\beta_{1j}$$ is the regression slope for gene <i>j</i>, $$\Age{i}$$ is the age of the indidividual studies in the sample, and $$\epsilon_{ij}$$ is the error term.<br>The slope of this regression identifies the direction of differencial expression with age. 0.05 <i>p-value</i> cut-off was then used to identify the significance of the coefficients (used only for binomial testing) and the coefficients variances were calculated using the same package (used ofr PyMare meta-regression). 
+Where Y is the expression of of gene <i>j</i> in sample <i>i</i>, \beta_{0j} is the intercept for gene <i>j</i>, \beta_{1j} is the regression slope for gene <i>j</i>, \Age{i} is the age of the indidividual studies in the sample, and \epsilon_{ij} is the error term.<br>The slope of this regression identifies the direction of differencial expression with age. 0.05 <i>p-value</i> cut-off was then used to identify the significance of the coefficients (used only for binomial testing) and the coefficients variances were calculated using the same package (used ofr PyMare meta-regression). 
 
 ...
 
