@@ -133,6 +133,13 @@ Description of common upregulated genes in Brain, Heart and Muscle tissues
   
   **5. SKAP2**: Differential expression of SKAP2 may influence T-cell activation and migration, which are essential for immune surveillance and defense against infections and cancer
 
+<img
+  src="/figs/downregulated gebes ibtersection.png"
+  alt="Downregulated genes intersection in all tissues "
+  title="Downregulated genes intersection genes in all tissues"
+  style="display: inline-block; margin: 0 auto; max-width: 300px">
+
+
 ### Downregulated genes:
 Description of common upregulated genes in Brain, Heart and Muscle tissues
   
