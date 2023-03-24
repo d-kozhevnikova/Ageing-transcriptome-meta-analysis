@@ -1,4 +1,4 @@
-# Project report
+# Changes in the ageing transcriptome for brain, muscle, and heart tissues in mice
 
 All code for tasks described in this report is avaliable in our <a href="https://github.com/d-kozhevnikova/Ageing-transcriptome-meta-analysis/blob/main/AgeingTranscriptionMetaRegression.ipynb">Jupyter Notebook</a>.
 
