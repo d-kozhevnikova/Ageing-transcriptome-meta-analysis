@@ -4,7 +4,7 @@ All code for tasks described in this report is avaliable in our <a href="https:/
 
 ## Introduction
 
-In this project, we reproduce the results of a gene expression meta-analysis performed by <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7906136/#SD2">Daniel Palmer and colleagues in 2021</a>. In this study transcriptomic signatures associate with ageing were identified for brain, heart and muscle tissues based on the analysis of 127 publicly-available microarray and RNA-Seq datasets from mice, rats, and humans.<br>
+In this project, we reproduce the results of a gene expression meta-analysis performed by <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7906136/">Daniel Palmer and colleagues in 2021</a>. In this study transcriptomic signatures associate with ageing were identified for brain, heart and muscle tissues based on the analysis of 127 publicly-available microarray and RNA-Seq datasets from mice, rats, and humans.<br>
 Overall, changes in gene expression with age followed the following patterns:
 <ul>
   <li>overexpression of immune and stress response genes with age</li>
@@ -210,7 +210,7 @@ Incase of downregulated genes only three genes were reported in GenAge database.
 
 ### The list of differentially expressed genes across aging
 
-According to the results of `palmer2021ageing` study all tissues and every tissue studied consistently overexpressed the following genes:
+According to the results of <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7906136/">2021 original paper</a> all tissues and every tissue studied consistently overexpressed the following genes:
 
 <img
   src="https://github.com/d-kozhevnikova/Ageing-transcriptome-meta-analysis/blob/main/figs/Palmer_table_overexpressed.jpg"
@@ -218,20 +218,15 @@ According to the results of `palmer2021ageing` study all tissues and every tissu
   title="Overexpressed genes"
   style="display: inline-block; margin: 0 auto; max-width: 300px">
   
-And the picture of underexpressed genes is the following:
+And for underexpressed genes the results are the following:
 
 <img
   src="https://github.com/d-kozhevnikova/Ageing-transcriptome-meta-analysis/blob/main/figs/Palmer_table_underexpressed.jpg"
   alt="Table of the top-5 genes most consistently underexpressed with age across datasets for all tissues and for each tissue studied. `palmer2021ageing`"
   title="Underexpressed genes"
   style="display: inline-block; margin: 0 auto; max-width: 300px">
-  
-We obtained a list of differentially expressed genes across aging and intersected them with GenAge database. Describtion of some of these genes 
-.
 
-...
-
-We further conducted enrichment analyses for genes differentially expressed in each tissue and for all three tissues together. According to its findings, immune system activation genes were overexpressed in the brain. Differentiation-related genes were overexpressed in muscles, resulting in a decrease in regeneration activity and muscle deterioration. An increase in GABA signaling and ion transport was observed in the heart. All tissues collectively exhibit an increase in the activity of immune and proteilitic genes, while metabolic genes decrease. The described results are in line with the conclusions made in the paper `palmer2021ageing`. 
+According to our findings, immune system activation genes were overexpressed in the brain. Differentiation-related genes were overexpressed in muscles, potentially resulting in a decrease of regeneration activity and muscle tissue deterioration in ageing people. An increase in GABA signaling and ion transport was observed in the heart. All tissues collectively exhibit an increase in the activity of immune and proteilytic genes, while metabolic genes are down-regulated. The described results are in line with the conclusions made in the <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7906136/">original paper</a>. 
 
 
 ## Credits
