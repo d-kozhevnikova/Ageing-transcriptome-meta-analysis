@@ -32,7 +32,7 @@ As additional steps authors also performed:
 <li>dN/dS analysis - ratio of non-synonymous to synonymous substitutions in the sequences of main DEGs in different species. These calculations showed that those genes are predominantly evolutionary conserved across species</li>
 <li>Random Forest ML model on GO terms was built to identify the GO terms that can best predict whether a particular gene will be over- or underexpressed with age</li>
 </ul>
-...
+<hr>
 
 ### Weak points of the paper
 
@@ -46,7 +46,7 @@ In our project we applied meta-regression using the <a href="https://pymare.read
   <li>list of variances for these slopes</li>
   <li>list of samples numbers for each dataset</li>
 </ul>
-...
+<hr>
 
 ## Results
 
@@ -64,9 +64,8 @@ To estimate differencially expressed genes (DEGs) we conducted **linear regressi
 
 $$Y_{ij} = \beta_{0j} + \beta_{1j}Age{i} + \epsilon_{ij}$$
 
-Where Y is the expression of of gene <i>j</i> in sample <i>i</i>, \beta_{0j} is the intercept for gene <i>j</i>, \beta_{1j} is the regression slope for gene <i>j</i>, \Age{i} is the age of the indidividual studies in the sample, and \epsilon_{ij} is the error term.<br>The slope of this regression identifies the direction of differencial expression with age. 0.05 <i>p-value</i> cut-off was then used to identify the significance of the coefficients (used only for binomial testing) and the coefficients variances were calculated using the same package (used ofr PyMare meta-regression). 
-
-...
+Where Y is the expression of of gene <i>j</i> in sample <i>i</i>, beta<sub>0j</sub> is the intercept for gene <i>j</i>, beta<sub>1j</sub> is the regression slope for gene <i>j</i>, Age<sub>i</sub> is the age of the indidividual studies in the sample, and epsilon<sub>ij</sub> is the error term.<br>The slope of this regression identifies the direction of differencial expression with age. 0.05 <i>p-value</i> cut-off was then used to identify the significance of the coefficients (used only for binomial testing) and the coefficients variances were calculated using the same package (used ofr PyMare meta-regression). 
+<hr>
 
 ### Meta-analysis of the datasets
 To identify genes differentially expressed in tissue across all datasets we applied **meta-regression** function from the **PyMare** package. This function takes as input the estimated regression coefficients for individual datasets and the variances for these coefficients as well as dataset sizes. It produces weighted estimates for gene expression change direction with age(called **total effect**), taking into account the level of uncertainty, and number of datasets analyzed.<br>
@@ -229,7 +228,8 @@ And the picture of underexpressed genes is the following:
   title="Underexpressed genes"
   style="display: inline-block; margin: 0 auto; max-width: 300px">
   
-We obtained a list of differentially expressed genes across aging and intersected them with GenAge database. Describtion of some of these genes ... .
+We obtained a list of differentially expressed genes across aging and intersected them with GenAge database. Describtion of some of these genes 
+.
 
 ...
 
