@@ -139,6 +139,12 @@ Description of common upregulated genes in Brain, Heart and Muscle tissues
   title="Downregulated genes intersection genes in all tissues"
   style="display: inline-block; margin: 0 auto; max-width: 300px">
 
+<img
+  src="/figs/uregulated genes intersection.png"
+  alt="Upregulated genes intersection in all tissues "
+  title="Upregulated genes intersection genes in all tissues"
+  style="display: inline-block; margin: 0 auto; max-width: 300px">
+
 
 ### Downregulated genes:
 Description of common upregulated genes in Brain, Heart and Muscle tissues
@@ -150,6 +156,12 @@ Description of common upregulated genes in Brain, Heart and Muscle tissues
   **3. UBN1**: involved in chromatin remodeling, which is important for regulating gene expression. 
   
   **4. SLC6A3**: encodes a dopamine transporter protein that is involved in the regulation of dopamine signaling in the brain
+
+<img
+  src="/figs/downregulated gebes ibtersection.png"
+  alt="Downregulated genes intersection in all tissues "
+  title="Downregulated genes intersection genes in all tissues"
+  style="display: inline-block; margin: 0 auto; max-width: 300px">
 
 ## GenAge intersection analysis
 
@@ -172,6 +184,12 @@ In the upregulated set of genes seven genes were reported in GenAge.
   
   **7. HNRNPD**: This gene encodes a protein called heterogeneous nuclear ribonucleoprotein D, which is involved in RNA processing and gene expression regulation
 
+<img
+  src="/figs/Genage iontersection with upregulated genes.png"
+  alt="Genage iontersection with upregulated genes in all tissues "
+  title="Genage iontersection with upregulated genes in all tissues"
+  style="display: inline-block; margin: 0 auto; max-width: 300px">
+
 ### Downregulated genes intersectio with GenAge:
 Incase of downregulated genes only three genes were reported in GenAge database.
 
@@ -180,6 +198,13 @@ Incase of downregulated genes only three genes were reported in GenAge database.
   **2. FOXM1**: a transcription factor that regulates the expression of genes involved in cell cycle progression, DNA replication, and repair
 
   **3. NUDT1 (nucleoside diphosphate-linked moiety X motif 1)**: an enzyme involved in nucleotide metabolism and DNA damage response
+
+<img
+  src="/figs/Genage intersection with downregulated genes.png"
+  alt="Genage intersection with downregulated genes in all tissues "
+  title="Genage iontersection with downregulated genes in all tissues"
+  style="display: inline-block; margin: 0 auto; max-width: 300px">
+
 ## Discussion
 
 ### The list of differentially expressed genes across aging
