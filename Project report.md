@@ -1,23 +1,37 @@
 # Project report
 
-All code for tasks described in this report is avaliable in the [Jupiter Notebook]().
+All code for tasks described in this report is avaliable in our <a href="https://github.com/d-kozhevnikova/Ageing-transcriptome-meta-analysis/blob/main/AgeingTranscriptionMetaRegression.ipynb">Jupyter Notebook</a>.
 
 ## Introduction
 
-In this project, we reproduce the results of a meta-analysis of gene expression in mice reported by Palmer, Daniel et al. in 2021  [palmer2021ageing](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7906136/#SD2). In this study transcriptome signatures of ageing in brain, heart and muscle were derived from 127 public microarray and RNA-Seq datasets from mice, rats, and humans. Gene expression patterns revealed overexpression of immune and stress response genes with age, as well as underexpression of metabolic and developmental genes. In muscle and heart cell response processes were found to be activated. It was indicated that gene ageing signatures are associated with key genes in protein interaction networks. Previously in thr paper [de2009meta](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2732303/) several common signatures of aging were highlighted including overexpression of inflammation, immune response and lysosomes related genes, underexpression of collagen, energy metabolism and MT genes, as well as alterations in expression of apoptosis genes. The reasoning that genes that display differential expression with age are mainly common for different tissues was confirmed.  
-
-The outline of the original study is the following: 
-1. Linear regression was performed for each gene inside each dataset. The slope of the regression corresponds to the level of change in gene expression.
-2. Genes statistically significantly associated with age were selected.
-3. Meta regression was performed with Binomial test.
-4. False discovery rate correction by permutation, the genes by critical P value sorted.
-5. Differentially expressed genes (DEGs) were identified in each set of datasets.
-6. DEGs were identified in all datasets combined.
-7. Enrichment analysis with David and topGO R tool was performed.
-8. dN/dS analysis - the authors calculated the ratio of no synonymus to synonymous substitutions in the main DEGs with age in different species. The result of their calculation showed that those genes are predominantly evolutionary conserved across species.
-9. Random Forest ML models was build to identify the most important GO terms in the age-related DEGs.
-10. Tissue specificity analysis was run with tau index used as a measure of tissue specificity. From the results of this analysis the authors found that the majority of age-associated DEGs are evenly expressed among tissues.
-
+In this project, we reproduce the results of a gene expression meta-analysis performed by <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7906136/#SD2">Daniel Palmer and colleagues in 2021</a>. In this study transcriptomic signatures associate with ageing were identified for brain, heart and muscle tissues based on the analysis of 127 publicly-available microarray and RNA-Seq datasets from mice, rats, and humans.<br>
+Overall, changes in gene expression with age followed the following patterns:
+<ul>
+  <li>overexpression of immune and stress response genes with age</li>
+  <li>underexpression of metabolic and developmental genes</li>
+</ul>
+In muscle and heart tissues genes involved in cell response processes were found to be activated. It was also found that genes differentially expressed with age were mainly central for protein-protein interaction networks. Previously in the <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2732303/">paper from 2009</a> by the same authors similar common ageing gene signatures were identified such as:
+<ul>
+  <li>overexpression of inflammation, immune response and lysosomes related genes</li>
+  <li>underexpression of collagen, energy metabolism (especiallu mitochondrial) genes</li>
+  <li>changes in expression of apoptosis genes and cell cycle regulation genes</li>
+</ul>
+Finally, it was found that genes differentially expressed with age are rarely tissue-specific but rather are commonly expressed in multiple tissues.<br>
+The outline of analysis pipeline from the original study is the following:
+<ol>
+<li>Linear regression performed for each gene inside each dataset. The slope of the regression corresponds to the direction in change of gene expression with age (if positive - gene is upregulated with age and vice versa)</li>
+<li>Genes for which regression slope is statistically significant are selected</li>
+<li>Meta regression analysis was performed with <i>Cumulative Binomial test</i></li>
+<li>False discovery rate correction was performed by permutating gene IDs in the original dataset and repeating the meta-regression analysis. Based on this an average percentage of statistically significantly differentially expressed genes was identified - this allowed calculating critical p-value at which FDR was less than 0.05</li>
+<li>Tissue specificity analysis was run with <i>tau</i> index used as a measure of tissue specificity</li>
+<li>Differentially expressed genes (DEGs) that had evidence of association with age across multiple datasets were selected for further analysis</li>
+<li>Enrichment analysis with David and topGO R tool was performed</li>
+</ol>
+As additional steps authors also performed:
+<ul>
+<li>dN/dS analysis - ratio of non-synonymous to synonymous substitutions in the sequences of main DEGs in different species. These calculations showed that those genes are predominantly evolutionary conserved across species</li>
+<li>Random Forest ML model on GO terms was built to identify the GO terms that can best predict whether a particular gene will be over- or underexpressed with age</li>
+</ul>
 ### Machine learning approach used in the paper `palmer2021ageing`
 
 ...
@@ -253,4 +267,3 @@ Training
 Blog
 About
 
-lalala
