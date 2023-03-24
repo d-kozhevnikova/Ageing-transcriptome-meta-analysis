@@ -32,49 +32,45 @@ As additional steps authors also performed:
 <li>dN/dS analysis - ratio of non-synonymous to synonymous substitutions in the sequences of main DEGs in different species. These calculations showed that those genes are predominantly evolutionary conserved across species</li>
 <li>Random Forest ML model on GO terms was built to identify the GO terms that can best predict whether a particular gene will be over- or underexpressed with age</li>
 </ul>
-### Machine learning approach used in the paper `palmer2021ageing`
-
 ...
 
 ### Weak points of the paper
 
-For the analysis of the significantly different expressions across the datasets, the authors used the binomial test. In cases where the dataset number is small, such meta-regression tests are not statistically significant because they don't reflect the effect size. Additionally, two different data types are explored, RNA-seq and microarray DNA, which require correction for the type of the data when they are combined. 
+To detect DEGs that were differentially expressed across multiple datasets, the authors used the cumulative binomial test. In cases where the total dataset number is small (in which the gene was studied), such meta-regression tests are not statistically significant because they don't reflect the effect size. Additionally, two different data types are explored, RNA-seq and microarray RNA sequencing, which might require additional correction for the specific details of experimental techniques.
 
 ### Suggestions for approach improvements
 
-Another approach for meta-regression can be used, in our project we applied meta-regression using the PyMare package for a higher specificity analysis.
+In our project we applied meta-regression using the <a href="https://pymare.readthedocs.io">PyMare</a> package for a higher specificity of the analysis. In this approach we did not select the statistically significant sloped inside each dataset but rather gave all the genes in each dataset as input to the meta-regression analyzer. PyMare itself estimates which of the slope estimates are statistically significant acorss multiple datasets based on:
+<ul>
+  <li>list of slope coefficients for eacg dataset</li>
+  <li>list of variances for these slopes</li>
+  <li>list of samples numbers for each dataset</li>
+</ul>
+...
 
 ## Results
 
 ### Preprocessing of the gene expression data
 
-From the data avaliable on the [github repository](https://github.com/maglab/AgeingSignatures2020_supplementary) we selected 20 mice microarray datasets originated from brain, heart and muscle. (12 (14) samples from brain, 5 from heart and 8 (12) from muscle) Each dataset contains expression levels of around 20000 genes from several samples.
+For the sake of time we decided to focus our analysis on brain, heart, and muscle tissues from mice only. From the data avaliable on the [github repository](https://github.com/maglab/AgeingSignatures2020_supplementary) we selected 27 mice microarray datasets originated from brain, heart and muscle (12 samples for brain, 5 for heart and 10 for muscle). Each dataset contains samples from mice of several age groups (usually several individuals inside each group). For each of these samples expression levels of around 20000 genes are studied.
 
-#### Quality control
+#### Quality control - PCA
 
-To explore a similarity of the samples we applied the Principal Component Analysis (PCA) method of data clustering. The samples belonging to different ages showed to be intermingled in the samples, so no samples were removed. 
+To explore the similarity of the samples within each dataset and each age group we applied the Principal Component Analysis (PCA) method of data clustering. The samples from different ages were, however, intermingled with each other so it was impossible to remove some samples due to out-clustering.
 
 #### Statistical testing
 
-To estimate differencially expressed genes (DEGs) we conducted **linear regression** analysis for all the datasets. The regression equation:
+To estimate differencially expressed genes (DEGs) we conducted **linear regression** analysis for all the datasets using <a href="https://www.statsmodels.org/dev/generated/statsmodels.regression.linear_model.OLS.html">statsmodels.OLS</a> python function. The regression equation was as following:
 
 $$Y_{ij} = \beta_{0j} + \beta_{1j}Age{i} + \epsilon_{ij}$$
 
-The slope of this regression identifies the coefficient of differencial expression. **F test** with 0.05 cutoff was then used to identify the significance of the coefficients and the coefficients variances were calculated. 
+Where Y is the expression of of gene <i>j</i> in sample <i>i</i>, $$\beta_{0j}$$ is the intercept for gene <i>j</i>, $$\beta_{1j}$$ is the regression slope for gene <i>j</i>, $$\Age{i}$$ is the age of the indidividual studies in the sample, and $$\epsilon_{ij}$$ is the error term.<br>The slope of this regression identifies the direction of differencial expression with age. 0.05 <i>p-value</i> cut-off was then used to identify the significance of the coefficients (used only for binomial testing) and the coefficients variances were calculated using the same package (used ofr PyMare meta-regression). 
 
-...???
+...
 
 ### Meta-analysis of the datasets
-
-...???
-
-subsetting_stats_genes - takes in the results of dataset builder and retorns tables with all significantl expressed genes
-
-Firstly the global metaanalysis was conducted to identify DEGs across all tissues. 
-
-Next, the same analysis was conducted separately for each tissue. ???
-
-To identify genes differentially expressed in tissue across all datasets we applied **meta regression** with the corresponding function from the **PyMare** package. This function takes as input the estimated regression coefficients for individual datasets and the variance of these coefficients. It produces weighted assessments of gene expression effects, taking into account the level of uncertainty. In our meta regression function, we passed the coefficient values, variances of coefficients, and tissue parameters and obtained..... ???
+To identify genes differentially expressed in tissue across all datasets we applied **meta-regression** function from the **PyMare** package. This function takes as input the estimated regression coefficients for individual datasets and the variances for these coefficients as well as dataset sizes. It produces weighted estimates for gene expression change direction with age(called **total effect**), taking into account the level of uncertainty, and number of datasets analyzed.<br>
+We conducted such analysis for each of the tissues as well as for all three tissues together. In the latter case we also passed the tissue parameters as extra cofounder parameter.
 
 ### GO enrichment analysis
 
