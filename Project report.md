@@ -64,7 +64,7 @@ To estimate differencially expressed genes (DEGs) we conducted **linear regressi
 
 $$Y_{ij} = \beta_{0j} + \beta_{1j}Age{i} + \epsilon_{ij}$$
 
-Where Y is the expression of of gene <i>j</i> in sample <i>i</i>, beta<sub>0j</sub> is the intercept for gene <i>j</i>, beta<sub>1j</sub> is the regression slope for gene <i>j</i>, Age<sub>i</sub> is the age of the indidividual studies in the sample, and epsilon<sub>ij</sub> is the error term.<br>The slope of this regression identifies the direction of differencial expression with age. 0.05 <i>p-value</i> cut-off was then used to identify the significance of the coefficients (used only for binomial testing) and the coefficients variances were calculated using the same package (used ofr PyMare meta-regression). 
+Where Y is the expression of of gene <i>j</i> in sample <i>i</i>, <i>β<sub>0j</sub></i> is the intercept for gene <i>j</i>, <i>β<sub>1j</sub></i> is the regression slope for gene <i>j</i>, Age<sub>i</sub> is the age of the indidividual studies in the sample, and <i>ε<sub>ij</sub></i> is the error term.<br>The slope of this regression identifies the direction of differencial expression with age. 0.05 <i>p-value</i> cut-off was then used to identify the significance of the coefficients (used only for binomial testing) and the coefficients variances were calculated using the same package (used ofr PyMare meta-regression). 
 <hr>
 
 ### Meta-analysis of the datasets
@@ -247,19 +247,4 @@ Palmer, Daniel et al. “Ageing transcriptome meta-analysis reveals similarities
 
 de Magalhães, João Pedro et al. “Meta-analysis of age-related gene expression profiles identifies common signatures of aging.” Bioinformatics (Oxford, England) vol. 25,7 (2009): 875-81. doi:10.1093/bioinformatics/btp073
 ```
-
-Footer
-© 2023 GitHub, Inc.
-Footer navigation
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
 
